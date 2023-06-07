@@ -56,3 +56,20 @@ a {
 .blog-post-meta {
     font-weight: 600;
 }
+
+.blog-post {
+    max-height: 90vh;
+    overflow: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+@media screen and (max-width: 768px) {
+    .blog-post {
+        scrollbar-width: none;
+    }
+
+    .blog-post::-webkit-scrollbar {
+        display: none;
+    }
+
+}
