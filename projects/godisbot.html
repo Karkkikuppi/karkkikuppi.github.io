@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Template · Bootstrap v5.3</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/project.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/article.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <meta name="description" content="Story of Godisbot - Candycup's page">
+    <meta property="og:title" content="Candycup's new and cool page">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://karkkikuppi.github.io/img/unused-twitter-banner.png">
+    <meta property="og:site_name" content="Candycup's Site">
+
+    <meta name="twitter:title" content="Story of Godisbot - Candycup's page" />
+    <meta name="twitter:summary" content="Godisbot was a Twitter AI bot that was designed to replace @godispasen - but how?" />
+    <meta name="twitter:image" content="https://karkkikuppi.github.io/img/unused-twitter-banner.png" />
+    <meta name="twitter:site" content="@candycuphaha" />
+</head>
+<body>
+<div id="image"></div>
+<main class="container mt-5">
+    <div class="row g-5">
+        <div class="col-md-8">
+            <article class="blog-post">
+                <h2 class="display-5 link-body-emphasis mb-1">The making of Godisbot & co.</h2>
+                <p class="blog-post-meta">Project released: May 8th, 2022</p>
+                <p>Godisbot was the first Twitter bot I ever made. And apparently like the only good concept I had for one, because i made like 6 of them just for fun.</p>
+                <p>In this post, I'll explain how it worked.</p>
+                <hr>
+                <h2>Backstory</h2>
+                <p>How do you even create an AI that replicates one's behavior? Well, in an age before ChatGPT, I had to embark on a research adventure.</p>
+                <img src="../img/godisbot/ai-is-hard.png" alt="Photo of some interesting search results" class="img-fluid" style="width: 50%">
+                <p><br>Somehow, I hadn't actually realized that what I was doing was pretty difficult. Especially when I didn't have <i>any</i> experience working with AI.
+                Thanfully there's a lot of smart people out there! After a while, I stumbled into <a href="https://karpathy.github.io/2015/05/21/rnn-effectiveness/">Recurrent Neural Networks</a>.
+                This tech would allow me to create the first version of Godisbot. </p>
+                <h2>The How</h2>
+                <p>Now, I had to get a dataset of Godis' tweets. I used <a href="https://www.vicinitas.io/free-tools/download-user-tweets">this</a> free tool to download all the tweets (sidenote: the app had to shut down following Musk's Twitter botcalypse)
+                to an excel file, which I then parsed using a python script.</p>
+                <p>After that, the data had to be parsed to remove all @mentions. I didn't want the bot to be really annoying.</p>
+                <p>Now, to the training! I found a <a href="https://www.tensorflow.org/text/tutorials/text_generation">tutorial</a> on how to generate text using RNN.
+                I trained the model on Google Colab, and dumped like 1000 tweets into a text file. I thought that hosting the model with the bot was an inefficient way to do it, so I just dumped the tweets into a text file.</p>
+                <p>And then, I launched it. What followed was a series of embarassing technical failures that caused the bot to tweet out duplicate tweets, tweet at the wrong times, and sometimes it just wouldn't do anything. For days at a time.</p>
+                <p>I kept maintaining the bot, but I didn't really care that much about improving it. It was a technical nightmare, and I just didn't see any point in re-doing it.</p>
+                <h2>Godisbot v2</h2>
+                <p>Godisbot's tweets were really wacky. They didn't really resemble godis' tweets, but they were funny nevertheless. But that was about to change. </p>
+                <p><a href="https://twitter.com/ahmetlacksdpmn">Ahmet</a>, dubbed by some as "The Best Person Ever", introduced me to Markov Chains.</p>
+                <img src="../img/godisbot/legendary-hero-comes-in-for-the-save.png" alt="Ahmet introduces me to markov chains" style="width: 100%">
+                <p><br>This was a <i>game changer.</i> After implementing the changes, godisbot as we know it was born.</p>
+                <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">What the hell does that mean you tell me I have STDs, we are Quitting You tube ! DUDE .........</p>&mdash; Godisbot (@godisbot) <a href="https://twitter.com/godisbot/status/1587293408690933760?ref_src=twsrc%5Etfw">November 1, 2022</a></blockquote>
+                <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">You seem to have sex</p>&mdash; Godisbot (@godisbot) <a href="https://twitter.com/godisbot/status/1530881817942888453?ref_src=twsrc%5Etfw">May 29, 2022</a></blockquote>
+
+                <p><br>After this, I created a <i>couple</i> spin-offs for my friends. But yeah. That's about it i think. And everyone lived happily ever after. jk i just shut them all down at some point</p>
+                <hr>
+                <h4>Q: Why did you make this?</h4>
+                <p>A: I was bored.</p>
+                <h4>Q: How did you host it?</h4>
+                <p>A: Heroku.</p>
+                <h4>Q: What was its best tweet in your opinion?</h4>
+                <p>A: BIG SOG FOV! GOG SSMAS!!<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">i want a leviathan bot that tweets stuff like this <a href="https://t.co/WJndOZA77m">https://t.co/WJndOZA77m</a></p>&mdash; Levi (@leviatwo) <a href="https://twitter.com/leviatwo/status/1525226319956652034?ref_src=twsrc%5Etfw">May 13, 2022</a></blockquote></p>
+            </article>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 sidebox">
+                    <h4 class="fst-italic">Personal favourites</h4>
+                    <div id="recommended_articles"></div>
+                </div>
+
+                <div class="p-4 sidebox">
+                    <h4 class="fst-italic">Candycup's stuff</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="https://github.com/Karkkikuppi">GitHub (most of my stuff is private, sorry!)</a></li>
+                        <li><a href="https://twitter.com/candycuphaha">Twitter</a></li>
+                        <li>Discord: Candycup#7007</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>

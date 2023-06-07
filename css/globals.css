@@ -1,0 +1,15 @@
+:root {
+    --white: #fff;
+    --link-white: rgba(255, 255, 255, .5);
+    --white-subtle: #cecece;
+}
+
+a {
+    color: var(--link-white);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cover-container {
+    max-width: 70em;
+}

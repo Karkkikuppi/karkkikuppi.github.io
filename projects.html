@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="h-100" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Candycup's Projects</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <link href="css/globals.css" rel="stylesheet">
+
+  <meta name="description" content="Candycup's page - View all my projects & their stories!">
+  <meta property="og:title" content="Candycup's new and cool page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://karkkikuppi.github.io/img/unused-twitter-banner.png">
+  <meta property="og:site_name" content="Candycup's Site">
+
+  <meta name="twitter:title" content="Candycup's Page - Projects & Cool stuff" />
+  <meta name="twitter:summary" content="Candycup's page - View all my projects & their stories!" />
+  <meta name="twitter:image" content="https://karkkikuppi.github.io/img/unused-twitter-banner.png" />
+  <meta name="twitter:site" content="@candycuphaha" />
+
+</head>
+<body class="d-flex h-100 text-center text-bg-dark">
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  window.onload = function() {
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  }
+</script>
+<div id="image"></div>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header>
+    <div>
+      <h3 class="float-md-start mb-0">Candycup's Site</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0" href="index.html">Home</a>
+        <a aria-current="page" class="nav-link fw-bold py-1 px-0 active" href="projects.html">Projects</a>
+        <a class="nav-link fw-bold py-1 px-0 disabled" href="#">Gallery (TODO)</a>
+      </nav>
+    </div>
+  </header>
+  <h4>Click any of the cards to view more info about them!</h4>
+  <h5>I've only written an article about Godisbot. More will come. I'll make a tweet whenever there's a new article.</h5>
+    <main>
+      <button class="card bg-dark" onclick="window.location.href = '/projects/godisbot.html';">
+        <div class="card-body">
+          <h5 class="card-title">Godisbot & co. <span class="badge text-bg-primary rounded-pill ">Twitter Bot</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Group of AI Twitter bots</h6>
+          <p class="card-text">Godisbot & co. were a series of experimental AI bots that helped me enter a whole new world of dumb ai stuff.</p>
+        </div>
+      </button>
+      <button class="card bg-dark" type="button" data-bs-toggle="popover" data-bs-title="Hey!!" data-bs-content="Thanks for showing interest. However, I haven't written this article yet. :)">
+        <div class="card-body">
+          <h5 class="card-title">Minelysis <span class="badge rounded-pill text-bg-success">Minecraft</span> <span class="badge rounded-pill text-bg-secondary">Visualization</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Minecraft data visualization tool</h6>
+          <p class="card-text">A tool I created to satisfy my need for visualizing data.</p>
+        </div>
+      </button>
+      <button class="card bg-dark" type="button" data-bs-toggle="popover" data-bs-title="Hey!!" data-bs-content="Thanks for showing interest. However, I haven't written this article yet. :)">
+        <div class="card-body">
+          <h5 class="card-title">Bounty SMP <span class="badge rounded-pill text-bg-success">Minecraft</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Minecraft SMP</h6>
+          <p class="card-text">The members get bounties to fulfill. The person with the most successful bounties in a row gets a cool crown with buffs.</p>
+        </div>
+      </button>
+      <button class="card bg-dark" onclick="window.location.href = 'https://twitter.com/BarrenSmp';">
+        <div class="card-body">
+          <h5 class="card-title">Barren SMP <span class="badge rounded-pill text-bg-success">Minecraft</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Minecraft SMP</h6>
+          <p class="card-text">Can't say much about this one, yet!</p>
+        </div>
+      </button>
+      <button class="card bg-dark" onclick="window.location.href = 'https://twitter.com/candycuphaha/status/1628485708800225285';">
+        <div class="card-body">
+          <h5 class="card-title">The SMP Atlas <span class="badge rounded-pill text-bg-secondary">Visualization</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Atlas visualization</h6>
+          <p class="card-text">How do SMP communities interact? I made an atlas to find out.</p>
+        </div>
+      </button>
+      <button class="card bg-dark" onclick="window.location.href = 'https://twitter.com/godis_frames';">
+        <div class="card-body">
+          <h5 class="card-title">@godis_frames <span class="badge text-bg-primary rounded-pill ">Twitter Bot</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Legally questionable Twitter bot</h6>
+          <p class="card-text">Twitter bot posting random frames from @godispasen's videos. Inspired by @breaking_frames. I'll explain why it's so special when i write the article.</p>
+        </div>
+      </button>
+      <button class="card bg-dark" type="button" data-bs-toggle="popover" data-bs-title="Hey!!" data-bs-content="Thanks for showing interest. However, I haven't written this article yet. :)">
+        <div class="card-body">
+          <h5 class="card-title">Godis Stock Market <span class="badge text-bg-danger rounded-pill ">Discord Bot</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Virtual stock market inside Discord</h6>
+          <p class="card-text">A virtual economy & stock market, inside Discord. Crashed after 2 days because we didn't realize to account for inflation, lol</p>
+        </div>
+      </button>
+      <button class="card bg-dark" type="button" data-bs-toggle="popover" data-bs-title="Hey!!" data-bs-content="Thanks for showing interest. However, I haven't written this article yet. :)">
+        <div class="card-body">
+          <h5 class="card-title">LVC <span class="badge text-bg-danger rounded-pill ">Discord Bot</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Full economy inside Discord</h6>
+          <p class="card-text">Developed for Dijon's discord. Based on Godis Stock Market's codebase, this completely re-written version also has an API and so much more </p>
+        </div>
+      </button>
+      <button class="card bg-dark" type="button" data-bs-toggle="popover" data-bs-title="Hey!!" data-bs-content="Thanks for showing interest. However, I haven't written this article yet. :)">
+        <div class="card-body">
+          <h5 class="card-title">MCCiCCTV / IslandVision <span class="badge text-bg-danger rounded-pill ">Discord Bot</span></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Automated news bot</h6>
+          <p class="card-text">An automated news Discord bot for keeping up with MCC Island. And a store tracker :) </p>
+        </div>
+      </button>
+    </main>
+  <footer class="mt-auto text-white-50">
+    <a>Background image: Unused Twitter banner</a>
+  </footer>
+</div>
+</body>
+</html>
