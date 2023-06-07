@@ -1,3 +1,7 @@
+/*
+Background image
+ */
+
 html,
 body,
 #image {
@@ -20,14 +24,35 @@ body[shown] {
     background-position: center center;
     background-repeat: no-repeat no-repeat;
     background-size: cover;
-    filter: blur(7px);
+    filter: blur(3px);
 }
 
+/*
+Actual article
+ */
 article, .sidebox {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     margin-bottom: 1rem;
     padding: 3rem;
-
     box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+}
+
+img {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 5);
+}
+body {
+    color: #eaeaea !important;
+}
+
+a {
+    color: var(--link-blue) !important;
+}
+
+.article-title {
+    font-weight: 700;
+}
+
+.blog-post-meta {
+    font-weight: 600;
 }

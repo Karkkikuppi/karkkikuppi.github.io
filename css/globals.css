@@ -1,7 +1,9 @@
 :root {
     --white: #fff;
     --link-white: rgba(255, 255, 255, .5);
+    --link-blue: #7dcaf3;
     --white-subtle: #cecece;
+    --white-subtle-alt : #eaeaea;
 }
 
 a {
