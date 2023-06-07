@@ -71,5 +71,8 @@ a {
     .blog-post::-webkit-scrollbar {
         display: none;
     }
+}
 
+.container {
+    max-width: 100em;
 }
