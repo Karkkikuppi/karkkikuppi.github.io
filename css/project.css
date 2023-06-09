@@ -45,6 +45,10 @@ body {
     color: #eaeaea !important;
 }
 
+h3 {
+    color: #eaeaea !important;
+}
+
 a {
     color: var(--link-blue) !important;
 }
